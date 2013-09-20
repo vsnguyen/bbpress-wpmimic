@@ -1,0 +1,180 @@
+/*
+Theme Name: WP Mimic
+Theme URI: http://vietsonnguyen.com/forum/
+Description: This theme is called "WP Mimic" because it is structured after the current themes of Wordpress (.com and .org) forums.
+Version: 1.0 
+Author: Vietson Nguyen
+Author URI: http://vietsonnguyen.com/
+*/
+
+/* Imported Fonts --------------------------- */
+@import url('http://fonts.googleapis.com/css?family=Molengo');
+@import url(' http://fonts.googleapis.com/css?family=Droid+Sans');
+
+/* Body ------------------------------------- */
+body {font: normal 1em 'Droid Sans'; background: #fff; color: #555; text-decoration: none;}
+
+/* Links ------------------------------------ */
+.clear	{clear: both;}
+	
+a	{color: #21759B; text-decoration: none;}
+a:hover	{color: #D54E21;}
+
+/* Inputs & Textarea -------------------------- */
+input, textarea	{border: 1px solid #C6D9E9; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; padding: 5px; color: #888; background: #fff;}
+input:hover, input:focus,
+textarea:hover, textarea:focus	{border: 1px solid #D54E21; color: #333; -moz-box-shadow: 0px 0px 5px #999; -webkit-box-shadow: 0px 0px 5px #999; }
+textarea	{-moz-resize: vertical;  -webkit-resize: vertical;  resize: vertical;}
+
+/* Wrapper ---------------------------------- */
+.wrapper	{width: 100%; height: auto; clear: both;}
+
+/* Header ----------------------------------- */
+#header	{width: 950px; height: 88px; margin: 0 auto; overflow: hidden; position: relative;}	
+.header	{background: #444;}
+#header h1	{text-align: left; display: block; margin-top: 40px;}
+#header h1 span	{display: block; font: normal .8em/10px "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif; color: #666; text-shadow: -1px -1px 0px #333;}
+#header h1 a	{color: #fff; font: normal 2.5em/0 Molengo; text-shadow: 1px 1px 1px #000;}
+#header h1 a:hover	{color: #fff;}	
+			
+#header ul {float: right; margin-top: -9px;}
+#header ul li	{display: inline;}
+#header ul li a	{color: #999; padding: 8px 12px; font: normal normal .9em/0px Droid Sans; text-shadow: 1px 1px 1px #000;}
+#header ul li a:hover, .pform a	{color: #fff;}
+#header ul li.current a	{color: #444; background: #e4f2fd; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -khtml-border-top-left-radius: 3px; -khtml-border-top-right-radius: 3px; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; text-shadow: 1px 1px 0px #fff;}
+#header ul li.donate a	{color: #fff; background: #d54e21; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -khtml-border-top-left-radius: 3px;-khtml-border-top-right-radius: 3px; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; text-shadow: 1px 1px 0px #333;}
+
+#header .search	{position: absolute; top: 5px; right: 0;}
+#header .search input	{padding: 5px; border: 1px solid #222; background: #333; border-radius: 5px; -moz-border-radius: 5px; -webkit-box-shadow: 1px 1px 1px #555; -moz-box-shadow: 1px 1px 0px #555;  color: #aaa;}
+#header .search .inputButton	{display: none;}
+
+/* Headline ----------------------------------- */
+#headline	{width: 950px; height: 87px; margin: 0 auto; text-align: center; overflow: hidden;}
+.headline	{background: #e4f2fd; border-bottom: 1px solid #C6D9E9;}
+#headline h2	{font: normal 1.5em/0 "Lucida Grande"; text-align: left; text-shadow: 1px 1px 0px #fff; margin-top: 65px; height: 10px; text-transform: capitalize;}
+
+.hlright	{font: normal .8em Droid Sans; text-align: right; margin-top: -45px;}
+.hlright .urin	{margin-top: 32px; font: normal 1em "Lucida Grande";}
+.hlright ul li	{display: inline;}
+.hlright form	{padding: 0; margin: 0px;}
+.hlright form input.remember	{margin-top: 15px;}
+.hlright form input	{margin-top: 5px;}		
+.hlright form a	{border: none; font-weight: normal; text-decoration: underline;}
+
+/* Breadcrumbs -------------------------------- */
+.bbcrumb	{width: 960px; position: relative; clear: both; font: italic normal .7em Verdana, Geneva, sans-serif;}
+.bbcrumb span.nav	{position: absolute; right: 0; font-style: normal;}
+.bbcrumb span.nav a	{font-weight: normal; padding: 0 3px;}
+.bbcrumb span.nav .current	{padding: 0 3px;}
+
+div.nav	{width: 960px; position: relative; clear: both; font: normal .8em Verdana, Geneva, sans-serif;}
+div.nav a	{padding: 0 3px;}
+div.nav .current	{padding: 0 3px;}
+
+#forum-page .bbcrumb,
+#profile-page .bbcrumb,
+#stats-page .bbcrumb,
+#register-page .bbcrumb	{margin-bottom: 24px;}
+	
+/* Forums ------------------------------------- */
+#forums	{width: 950px; margin: 0 auto; margin-top: 30px; text-align: left;}
+#forums table	{width: 100%; border-collapse: collapse; margin-bottom: 30px;}
+#forums table th,
+#forums table td	{padding: 5px 0; font-size: .7em; font-weight: normal; vertical-align: text-top; text-align: right; width: 95px;}
+#forums table td.title,
+#forums table th.title	{text-align: left; font-size: .8em; width: auto;}
+#forums table th.title	{font-weight: bold; color: #333;}
+#forums table td.title	{ padding-left: 5px;}
+#forums table td.title span,
+#forums table td.title small	{font-style: italic; display: block; color: #aaa; font-size: .8em;}
+#forums table th	{border-bottom: 2px solid #ccc;}
+#forums table td	{border-bottom: 1px solid #ccc;}
+#forums table tbody tr:hover	{background: #E4F2FD;}
+#forums table tr.sticky {background: #FFFBCC;}
+#forums table th a,
+#forums table td a	{font-weight: normal;}
+#forums table th.title a,
+#forums table td.title a	{font-weight: 500;}
+#forums table .bb-child td	{border-bottom: 1px solid #fff;}
+#forums table .bb-child td.title a	{padding-left: 5px; border-left: 5px solid #ccc;}
+#forums table .bb-child	{background: #efefef;}
+#forums table .bb-child:hover	{background: #fff;}
+
+#forums table#forum-topics	{margin-bottom: 5px;}
+
+#forums h2	{border-bottom: 2px solid #ccc; padding: 5px 0; margin-bottom: 5px; color: #333; font: bold .8em Droid Sans;}
+#forums h2.post-form	{border: none; margin-top: 24px;}
+
+#sidebar	{width: 300px; float: left;}
+#sidebar dl,
+#sidebar ul	{width: 300px; clear:both;}
+#sidebar li,
+#sidebar dt, #sidebar dd	{padding: 5px 0; font-size: .8em; font-weight: normal; vertical-align: text-top; border-bottom: 1px solid #ddd;}
+#sidebar dt, #sidebar dd	{display: block; width: 150px; float: left;}
+#sidebar dd	{ text-align: right;}
+#sidebar .sbox	{margin-bottom: 30px !important;}
+
+#content	{width: 620px; float: right;}
+#content .post-user	{display: none;}
+#content .post-content form	{margin-bottom: 15px;}
+#content .post-content input,
+#content .post-content textarea	{margin-bottom: 5px;}
+#content .post-content textarea#post_content,
+#content .post-content input#topic,
+#content .post-content input#tags-input	{width: 608px;}
+
+#fcontent	{width: 100%;}
+#fcontent .post	{width: 100%}
+#fcontent .breadcrumbs	{margin-bottom: 20px; margin-top: 0;}
+#fcontent .post-user	{display: none; width: 1px;}
+#fcontent .post-content	{width: 930px;}
+#fcontent .post-content textarea#post_content,
+#fcontent .post-content input#topic,
+#fcontent .post-content input#tags-input	{width: 900px;}
+#fcontent .search	{padding: 10px; border-top: 1px solid #FC6; border-bottom: 1px solid #FC6; background: #FFC; margin-bottom: 15px;}
+#fcontent .search input.inputButton	{display: none;}
+#fcontent .search input	{width: 910px;}
+
+/* entry -------------------------------------- */
+#topics	{margin-top: 24px;}
+#topics h2	{font-size: 1em; color: #555; margin: 0px; border-bottom: 2px solid #ccc; padding: 5px 0;}
+#topics h2 span	{font: normal normal .8em Verdana, Geneva, sans-serif; color: #999;}
+		
+#aboutpost	{width: 160px; float: right;}
+#aboutpost ul	{margin-bottom: 15px;}
+#aboutpost ul li	{font: normal .7em "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif; border-bottom: 1px solid #ddd; padding: 5px 0;}
+
+#entry	{width: 765px; float: left; margin-bottom: 30px;}
+#entry .post	{width: 765px; display: block; margin: 20px 0 0 0; font: normal .8em "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif; float: left;}
+#entry .post .post-user	{width: 100px; padding: 5px; border: 1px solid #bbb; border-radius: 5px; background: #eee; font-size: .7em;}
+#entry .position1 .post-content	{border: none; padding-top: 0px;}
+#entry h2.post-form	{display: none; visibility: hidden;}
+
+form.postform	{display: block; clear: left;}
+form.postform em	{display: block;}
+.post h3 span.aadmin	{float: right;}
+.post h3 a.post-ip-link	{display: none;}
+.post textarea#post_content,
+.post input#topic,
+.post input#tags-input	{width: 628px;}
+.post .resp	{border: none; padding-top: 0px;}
+
+.post-user ul li	{padding: 5px 0; border-bottom: 1px solid #ccc;}
+.post-user ul li:last-child	{border: none;}
+
+.post-content	{float: right; width: 640px; border-top: 1px solid #ddd; padding-top: 5px;}
+.post-content p	{margin-bottom: 1.5em; line-height: 1.5em;}
+.post-content p:last-child	{margin-bottom: 0px;}
+
+.post-content ul li {list-style-type: disc; list-style-position: inside; list-style-image: inherit; margin: 5px 0px;}
+.post-content ul ul li	{list-style-type: circle; margin-left: 15px;}
+.post-content ul ul ul li	{list-style-type: square;}
+.post-content ul	{margin-bottom: 15px;}
+.post-content ul ul	{margin-bottom: 0px;}
+
+.post-content blockquote,
+.post-content pre	{border: 1px solid #ccc; border-left: 5px solid #ccc; background: #eee; color: #aaa; padding: 5px; font-size: .8em; margin-bottom: 20px;}
+.post-content pre	{color: #777;}
+/* Footer ------------------------------------- */
+#footer	{width: 950px; margin: 0 auto; margin-top: 30px !important; padding: 10px 0;border-top: 2px solid #ccc; font: normal .7em/ Molengo;}
+#footer p.fright	{text-align: right; margin-top: -20px;}
